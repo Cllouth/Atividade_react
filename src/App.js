@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import TodolistComponente from './componentes/Todolist';
 function App() {
+  const Todolist = [
+    {id: 1, Text: "Aprender React"},
+    {id: 2, Text: "Construir um projeto simples"},
+    {id: 3, Text: "Entender Props e State"}
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <TodolistComponente tarefas={Todolist}/>
   );
 }
 
